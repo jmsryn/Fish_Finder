@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css');
+
+.custom-shape-divider-bottom-1651245029 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1651245029 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 198px;
+}
+
+.custom-shape-divider-bottom-1651245029 .shape-fill {
+    fill: #E4EEFE;
+}
+
+.custom-shape-divider-top-1651245586 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1651245586 svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 427px;
+    z-index: -100;
+}
+
+.custom-shape-divider-top-1651245586 .shape-fill {
+    fill: #E4EEFE;
+}
