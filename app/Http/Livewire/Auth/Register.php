@@ -12,7 +12,7 @@ class Register extends Component
     public $name;
     public $email;
     public $password;
-    public $cpassword;
+    public $confirmPassword;
 
     public function register() {
         $this->validate();
@@ -35,6 +35,7 @@ class Register extends Component
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => ['required', Password::min(6)->letters()->symbols()],
+            'confirmPassword' => 'required|same:password',
         ];
     }
 
