@@ -198,3 +198,35 @@
         </div>
     </div>
 </div>
+
+
+<script>
+        window.addEventListener('swal:deleteModal', event => {
+        Swal.fire({
+            title: event.detail.title,
+            text: event.detail.text,
+            icon: event.detail.type,
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((willDelete) => {
+            if (willDelete.isConfirmed) {
+                window.livewire.emit('delete', event.detail.id)
+                Swal.fire(
+                'Deleted!',
+                'Fish has been deleted.',
+                'success'
+                )
+            }
+        })
+    })
+
+    window.addEventListener('swal:modal', event => {
+        Swal.fire({
+            title: event.detail.title,
+            text: event.detail.text,
+            icon: 'success'
+        })
+    })
+</script>

@@ -32,7 +32,7 @@
                         @enderror
                     </div>
                 </div>
-                <div class="w-full h-96 shadow-lg border-2 rounded-2xl mt-4">
+                <div class="w-full h-96 shadow-lg border-2 rounded-2xl mt-4" wire:ignore.self>
                     <div id="map" class="-full h-full rounded-2xl"></div>
                 </div>
                 <div class="m-2 float-right">
